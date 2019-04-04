@@ -6,16 +6,16 @@ package wpd2.groupX.model;
 import java.util.List;
 
 public class Milestones {
-    private String topic;
+    private String milestone;
     private List<String> messages;
 
-    public Milestones(String t, List<String> m) {
-        topic = t;
+    public Milestones(String ms, List<String> m) {
+        milestone = ms;
         messages = m;
     }
 
-    public String getTopic() {
-        return topic;
+    public String getMileStone() {
+        return milestone;
     }
 
     public List<String> getMessages() {

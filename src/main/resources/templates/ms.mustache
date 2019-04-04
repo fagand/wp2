@@ -6,14 +6,15 @@
 
 </head>
 <body>
+<nav><a href="http://localhost:9003/topics">Milestones</a> </nav>
 <h1>{{name}}</h1>
 <p>Welcome!</p>
 <div>
 
-    <span>Browse Topics</span>
+    <span>Browse Milestones</span>
     <ol id='topics'>
     {{#topics}}
-            <li>{{.}}</li>
+        <a href="#"><li>{{.}}</li></a>
     {{/topics}}
     </ol>
 </div>

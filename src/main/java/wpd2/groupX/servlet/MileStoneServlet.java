@@ -11,7 +11,7 @@ import java.util.Arrays;
 public class MileStoneServlet extends BaseServlet {
     //good practice to declare the template that is populated as a constant, why?
     //declare your template here
-    private static final String MESSAGE_BOARD_TEMPLATE = "mb.mustache";
+    private static final String MESSAGE_BOARD_TEMPLATE = "ms.mustache";
     //servlet can be serialized
     private static final long serialVersionUID = 687117339002032958L;
 
