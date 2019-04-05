@@ -36,6 +36,15 @@
             <version>1.18.6</version>
             <scope>provided</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.h2database/h2 -->
+        <dependency>
+            <groupId>com.h2database</groupId>
+            <artifactId>h2</artifactId>
+            <version>1.4.195</version>
+            <scope>test</scope>
+        </dependency>
+
+
     </dependencies>
     <build>
         <finalName>jetty-store-demo</finalName>

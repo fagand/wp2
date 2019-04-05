@@ -1,15 +1,15 @@
 package wpd2.groupX;
 
-import wpd2.groupX.servlet.PublicServlet;
+import wpd2.groupX.db.UserDb;
+import wpd2.groupX.servlet.*;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import wpd2.groupX.servlet.LoginServlet;
-import wpd2.groupX.servlet.MileStoneServlet;
-import wpd2.groupX.servlet.TopicServlet;
+
+import java.util.Locale;
 
 public class Runner {
     @SuppressWarnings("unused")
@@ -17,11 +17,9 @@ public class Runner {
 
     private static final int PORT = 9003;
 
-    private final String name;
+    private final UserDb userDb;
 
-    private Runner(String name) {
-        this.name = name;
-    }
+    public Runner() { userDb = new UserDb(); }
 
     private void start() throws Exception {
         Server server = new Server(PORT);
@@ -44,6 +42,8 @@ public class Runner {
 
         handler.addServlet(new ServletHolder(new LoginServlet()), "/login");
 
+        handler.addServlet(new ServletHolder(new PersonServlet(userDb)), "/index.html");
+
 
         server.start();
         LOG.info("Server started, will run until terminated");
@@ -54,7 +54,8 @@ public class Runner {
     public static void main(String[] args) {
         try {
             LOG.info("server starting...");
-            new Runner("Demo").start();
+            Locale.setDefault(Locale.UK);
+            new Runner().start();
         } catch (Exception e) {
             LOG.error("Unexpected error running: " + e.getMessage());
         }
