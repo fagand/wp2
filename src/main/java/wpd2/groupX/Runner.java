@@ -1,12 +1,13 @@
 package wpd2.groupX;
 
-import wpd2.groupX.servlet.DemoServlet;
+import wpd2.groupX.servlet.PublicServlet;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import wpd2.groupX.servlet.LoginServlet;
 import wpd2.groupX.servlet.MileStoneServlet;
 import wpd2.groupX.servlet.TopicServlet;
 
@@ -32,14 +33,16 @@ public class Runner {
         DefaultServlet ds = new DefaultServlet();
         handler.addServlet(new ServletHolder(ds), "/");
 
-        DemoServlet demoServlet = new DemoServlet(name);
-        handler.addServlet(new ServletHolder(demoServlet), "/demo");
+        PublicServlet publicServlet = new PublicServlet();
+        handler.addServlet(new ServletHolder(publicServlet), "/public");
 
         TopicServlet topicServlet = new TopicServlet();
         handler.addServlet(new ServletHolder(topicServlet), "/topics");
 
         MileStoneServlet milestoneServlet = new MileStoneServlet();
         handler.addServlet(new ServletHolder(milestoneServlet), "/milestones");
+
+        handler.addServlet(new ServletHolder(new LoginServlet()), "/login");
 
 
         server.start();

@@ -1,6 +1,7 @@
 package wpd2.groupX.servlet;
 
 import wpd2.groupX.model.MileStoneBoard;
+import wpd2.groupX.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -21,13 +22,10 @@ public class MileStoneServlet extends BaseServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        showView(response, MESSAGE_BOARD_TEMPLATE, getObject());
-    }
-
-    private Object getObject() {
-        MileStoneBoard ms = new MileStoneBoard();
-        ms.setName("My Milestone Board");
-        ms.setTopics(Arrays.asList("Milestone 1", "Milestone 2"));
-        return ms;
+        if (!authOK(request, response)){
+            return;
+        }
+        String userName = User.getCurrentUser(request);
+        showView(response, MESSAGE_BOARD_TEMPLATE, userName);
     }
 }
