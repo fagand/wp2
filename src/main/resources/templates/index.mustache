@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Shop Demo">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+</head>
+<body>
+<div>
+    <h1>Milestone Database Demo</h1>
+    <p><a href="/login">Login Page</a>
+    <a href="/public">public Page</a>
+    <a href="/milestones">milestones Page</a>
+        <a href="/topics">topics Page</a></p>
+
+    <form method="POST" action="/add">
+        <label for="first">First:</label>
+        <input type="text" id="first" name="first">
+        <label for="last">Last:</label>
+        <input type="text" id="last" name="last">
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
+
+        <input type="submit" value="add">
+    </form>
+    <p>There are {{count}} persons in the database</p>
+</div>
+</body>
+</html>

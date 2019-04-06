@@ -10,6 +10,7 @@
       <root url="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/" />
       <root url="jar://$PROJECT_DIR$/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/h2-1.4.199.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
