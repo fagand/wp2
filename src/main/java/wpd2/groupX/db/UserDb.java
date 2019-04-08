@@ -26,13 +26,14 @@ public class UserDb implements AutoCloseable {
     }
 
     public UserDb() {
-        this(MEMORY);
+        this(FILE);
     }
 
     public UserDb(String db) {
         try {
             connection = getConnection(db);
             loadResource("/person.sql");
+            loadResource("/logins.sql");
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }
