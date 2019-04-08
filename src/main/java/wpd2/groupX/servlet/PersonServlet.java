@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
 
-public class PersonServlet extends HttpServlet {
+public class PersonServlet extends BaseServlet {
     static final Logger LOG = LoggerFactory.getLogger(PersonServlet.class);
 
     private final UserDb userDb;
@@ -28,7 +28,7 @@ public class PersonServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Person> persons = userDb.findPersons();
-        String html = mustache.render("index.mustache", new Result(persons.size()));
+        String html = mustache.render("index.mustache", new Result(persons.size(), persons));
         response.setContentType("text/html");
         response.setStatus(200);
         response.getOutputStream().write(html.getBytes(Charset.forName("utf-8")));
@@ -46,7 +46,8 @@ public class PersonServlet extends HttpServlet {
 
     @Data
     class Result {
-        private int count;
-        Result(int count) { this.count = count; }
+        public int count;
+        public List<Person> person;
+        Result(int count, List<Person> person) { this.count = count; this.person = person;}
     }
 }

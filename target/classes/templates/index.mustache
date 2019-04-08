@@ -9,9 +9,9 @@
 <body>
 <div>
     <h1>Milestone Database Demo</h1>
-    <p><a href="/login">Login Page</a>
-    <a href="/public">public Page</a>
-    <a href="/milestones">milestones Page</a>
+    <p><a href="/login">Login Page |</a>
+        <a href="/public">public Page |</a>
+        <a href="/milestones">milestones Page |</a>
         <a href="/topics">topics Page</a></p>
 
     <form method="POST" action="/add">
@@ -25,6 +25,13 @@
         <input type="submit" value="add">
     </form>
     <p>There are {{count}} persons in the database</p>
+    <p>Persons in the database are:
+    <ol>
+        {{#person}}
+        <li>{{getFirst}} {{getLast}} Email: {{getEmail}}</li>
+        {{/person}}
+    </ol>
+    </p>
 </div>
 </body>
 </html>
