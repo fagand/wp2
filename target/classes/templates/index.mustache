@@ -9,7 +9,7 @@
 <body>
 <div>
     <h1>Milestone Database Demo</h1>
-    <p><a href="/login">Login Page |</a>
+    <p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
         <a href="/public">public Page |</a>
         <a href="/milestones">milestones Page |</a>
         <a href="/topics">topics Page</a></p>
@@ -24,7 +24,7 @@
 
         <input type="submit" value="add">
     </form>
-    <p>There are {{count}} persons in the database</p>
+    <p>There are {{count}} persons in the database</p> If you're logged in your name is: {{currentUsername}}
     <p>Persons in the database are:
     <ol>
         {{#person}}
@@ -32,6 +32,9 @@
         {{/person}}
     </ol>
     </p>
+    <form action="/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
 </div>
 </body>
 </html>

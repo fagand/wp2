@@ -8,6 +8,8 @@ import org.slf4j.LoggerFactory;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.swing.*;
+import java.io.Console;
 import java.io.IOException;
 
 public class LoginServlet extends BaseServlet{
@@ -31,6 +33,7 @@ public class LoginServlet extends BaseServlet{
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         String name = request.getParameter(User.USERNAME_PARAMETER);
+        String password = request.getParameter(User.PASSWORD_PARAMETER);
         if (name != null && name.length() > 0) {
             User.setCurrentUser(request, name);
             String targetURL = User.getLoginRedirect(request);

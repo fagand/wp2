@@ -11,9 +11,10 @@ public class User {
     static final Logger LOG = LoggerFactory.getLogger(User.class);
 
     public final static String USERNAME_PARAMETER = "userName";
+    public final static String PASSWORD_PARAMETER = "passWord";
     private final static String USER_NAME_KEY = "userName";
     private final static String LOGIN_REDIRECT_KEY = "redirectURL";
-    final static String DEFAULT_LOGIN_REDIRECT = "/index.html";
+    public final static String DEFAULT_LOGIN_REDIRECT = "/index.html";
 
     private User() {}
 

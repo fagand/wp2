@@ -41,6 +41,8 @@ public class Runner {
         handler.addServlet(new ServletHolder(milestoneServlet), "/milestones");
 
         handler.addServlet(new ServletHolder(new LoginServlet()), "/login");
+        handler.addServlet(new ServletHolder(new LogoutServlet()), "/logout");
+
 
         handler.addServlet(new ServletHolder(new PersonServlet(userDb)), "/index.html");
 
