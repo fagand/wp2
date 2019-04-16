@@ -24,8 +24,7 @@ public class TopicServlet extends BaseServlet {
         messages.add("not really, got compile time errors");
         messages.add("rtfm");
         messages.add("need coffee");
-        Milestones t = new Milestones("Java", messages);
-        return t;
+        return messages;
     }
 
     @Override
