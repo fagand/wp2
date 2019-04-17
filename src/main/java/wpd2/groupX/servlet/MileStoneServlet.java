@@ -21,13 +21,12 @@ public class MileStoneServlet extends BaseServlet {
     public MileStoneServlet() {
     }
     private Object getObject() throws ParseException {
-        String name ="milestone 1";
-        String desc = "test description";
-        String date = "2019-01-01";
-
-        Milestones t = new Milestones(name,desc,date);
-        System.out.println(t.toString());
-        return t.toString();
+        MileStoneBoard msb = new MileStoneBoard();
+        Milestones m = new Milestones("Name 1", "Description 1", "1990-02-22");
+        msb.addMilestone(m);
+        msb.setName("Milestone Board Name");
+        //System.out.println(msb.toString());
+        return msb;
     }
 
 
@@ -37,6 +36,12 @@ public class MileStoneServlet extends BaseServlet {
             return;
         }
         String userName = User.getCurrentUser(request);
-        showView(response, MESSAGE_BOARD_TEMPLATE, userName);
+        //Original
+        // showView(response, MESSAGE_BOARD_TEMPLATE, userName);
+        try {
+            showView(response, MESSAGE_BOARD_TEMPLATE, getObject() + userName);
+        } catch (ParseException e) {
+            e.printStackTrace();
+        }
     }
 }

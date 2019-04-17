@@ -13,16 +13,16 @@
     <a href="/milestones">milestone board Page |</a>
     <a href="/topics">milestones Page</a></p>
 <p>Welcome {{.}}!</p>
+<p>{{name}}{{description}}{{duedate}}</p>
 <div>
 
     <span>Browse Milestones</span>
     <ol id='topics'>
-    {{#topics}}
+    {{#milestones}}
         <a href="#"><li>{{.}}</li></a>
-    {{/topics}}
+    {{/milestones}}
     </ol>
 </div>
 
 </body>
 </html>
-
