@@ -1,12 +1,14 @@
 package wpd2.groupX.servlet;
 
 import wpd2.groupX.model.MileStoneBoard;
+import wpd2.groupX.model.Milestones;
 import wpd2.groupX.model.User;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.text.ParseException;
 import java.util.Arrays;
 
 public class MileStoneServlet extends BaseServlet {
@@ -16,7 +18,16 @@ public class MileStoneServlet extends BaseServlet {
     //servlet can be serialized
     private static final long serialVersionUID = 687117339002032958L;
 
-    public MileStoneServlet()  {
+    public MileStoneServlet() {
+    }
+    private Object getObject() throws ParseException {
+        String name ="milestone 1";
+        String desc = "test description";
+        String date = "2019-01-01";
+
+        Milestones t = new Milestones(name,desc,date);
+        System.out.println(t.toString());
+        return t.toString();
     }
 
 
