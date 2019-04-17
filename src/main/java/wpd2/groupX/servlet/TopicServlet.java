@@ -8,6 +8,7 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
+import wpd2.groupX.model.MileStoneBoard;
 import wpd2.groupX.model.Milestones;
 
 
@@ -31,8 +32,14 @@ public class TopicServlet extends BaseServlet {
 
         Milestones t = new Milestones(name,desc,date);
         System.out.println(t.toString());
-        return messages;
 
+        // Add milestones to the board
+        MileStoneBoard mb = new MileStoneBoard();
+        mb.addMilestone(t);
+        List <Milestones> milestonesList = mb.getMilestones();
+        // Doesnt work but that's the idea
+
+        return t;
     }
 
     @Override
