@@ -1,24 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f8dffbf0-e882-4cd6-949a-c63bda62b497" name="Default Changelist" comment="Added login func and other pages">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f8dffbf0-e882-4cd6-949a-c63bda62b497" name="Default Changelist" comment="Made changes to Topic Servlet to make application run (Topics page no longer displays data)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/guice-jetty-store.iml" beforeDir="false" afterPath="$PROJECT_DIR$/guice-jetty-store.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/MileStoneBoard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/MileStoneBoard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/groupX.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/guice-jetty-store.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/Runner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/db/UserDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/db/UserDb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/MileStoneBoard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/Milestones.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/BaseServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/PersonServlet$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/PersonServlet$Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/TopicServlet.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/util/MustacheRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/util/MustacheRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/topics.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/topics.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/MileStoneServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/MileStoneServlet.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -60,6 +48,13 @@
         <item name="shop [2]" type="feb32156:DbDataSourceImpl" />
         <item name="SHOP: database" type="2aa06773:H2ImplModel$Database" />
         <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
+        <item name="LOGINS: table" type="818c1b4a:H2ImplModel$Table" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="shop [2]" type="feb32156:DbDataSourceImpl" />
+        <item name="SHOP: database" type="2aa06773:H2ImplModel$Database" />
+        <item name="PUBLIC: schema" type="7f85d983:H2ImplModel$Schema" />
         <item name="PERSON: table" type="818c1b4a:H2ImplModel$Table" />
       </path>
     </expand>
@@ -69,62 +64,106 @@
     <option name="autoscrollToSource" value="true" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="wpd2coursework" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Person.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+            <state relative-caret-position="501">
+              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
               <folding>
-                <element signature="e#325#326#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#384#385#0" expanded="true" />
-                <element signature="e#411#412#0" expanded="true" />
-                <element signature="e#443#444#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#705#706#0" expanded="true" />
+                <element signature="e#737#738#0" expanded="true" />
+                <element signature="e#773#774#0" expanded="true" />
+                <element signature="e#802#803#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#879#880#0" expanded="true" />
+                <element signature="e#922#923#0" expanded="true" />
+                <element signature="e#958#959#0" expanded="true" />
+                <element signature="e#989#990#0" expanded="true" />
+                <element signature="e#1024#1025#0" expanded="true" />
+                <element signature="e#1061#1062#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
+                <element signature="e#1315#1316#0" expanded="true" />
+                <element signature="e#1355#1356#0" expanded="true" />
+                <element signature="e#1397#1398#0" expanded="true" />
+                <element signature="e#1434#1435#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="646">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="442">
+              <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#648#649#0" expanded="true" />
-                <element signature="e#680#681#0" expanded="true" />
-                <element signature="e#716#717#0" expanded="true" />
-                <element signature="e#745#746#0" expanded="true" />
-                <element signature="e#783#784#0" expanded="true" />
-                <element signature="e#822#823#0" expanded="true" />
-                <element signature="e#865#866#0" expanded="true" />
-                <element signature="e#901#902#0" expanded="true" />
-                <element signature="e#937#938#0" expanded="true" />
-                <element signature="e#969#970#0" expanded="true" />
-                <element signature="e#1011#1012#0" expanded="true" />
-                <element signature="e#1047#1048#0" expanded="true" />
-                <element signature="e#1257#1258#0" expanded="true" />
-                <element signature="e#1292#1293#0" expanded="true" />
-                <element signature="e#1335#1336#0" expanded="true" />
-                <element signature="e#1367#1368#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/util/MustacheRenderer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LoginServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="272">
+              <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#603#604#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topics.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LogoutServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,69 +182,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/MileStoneBoard.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#290#291#0" expanded="true" />
-                <element signature="e#322#323#0" expanded="true" />
-                <element signature="e#361#362#0" expanded="true" />
-                <element signature="e#399#400#0" expanded="true" />
-                <element signature="e#436#437#0" expanded="true" />
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#545#546#0" expanded="true" />
-                <element signature="e#606#607#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#628#629#0" expanded="true" />
-                <element signature="e#707#708#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/h2-1.4.199 11-57-14-749.jar!/META-INF/services/java.sql.Driver">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms.mustache">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/h2-1.4.199 11-57-14-749.jar!/org/h2/Driver.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/BaseServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="41" column="25" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="238">
+              <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -225,6 +205,7 @@
       <find>H2Person</find>
       <find>&lt;p&gt;</find>
       <find>.size</find>
+      <find>topics</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -240,7 +221,6 @@
         <option value="$PROJECT_DIR$/src/coursework/servlet/Servlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/mb.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/BaseServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java" />
         <option value="$PROJECT_DIR$/src/main/resources/webapp/index.html" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/PublicServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/db/db.java" />
@@ -258,12 +238,14 @@
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/topics.mustache" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/ms.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.mustache" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/MileStoneBoard.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/ms.mustache" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/topics.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java" />
       </list>
     </option>
   </component>
@@ -281,7 +263,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -426,6 +407,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -436,7 +418,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555438035821" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555495447310" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -508,7 +490,9 @@
       <workItem from="1554739107582" duration="2292000" />
       <workItem from="1554745937844" duration="4262000" />
       <workItem from="1555241949823" duration="5144000" />
-      <workItem from="1555436682190" duration="1269000" />
+      <workItem from="1555436682190" duration="4796000" />
+      <workItem from="1555495202092" duration="351000" />
+      <workItem from="1555495689731" duration="328000" />
     </task>
     <task id="LOCAL-00001" summary="Project started">
       <created>1552752200742</created>
@@ -517,23 +501,52 @@
       <option name="project" value="LOCAL" />
       <updated>1552752200742</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Model classes updated, Milestones class expanded">
+      <created>1555438132421</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1555438132421</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Made changes to Topic Servlet to make application run (Topics page no longer displays data)">
+      <created>1555440165351</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1555440165351</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Made changes to Topic Servlet to make application run (Topics page no longer displays data)">
+      <created>1555440727013</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1555440727013</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="40905000" />
+    <option name="totallyTimeSpent" value="45111000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938166" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49596122" visible="true" weight="0.16257995" />
+      <window_info id="Structure" order="1" sideWeight="0.50403875" side_tool="true" visible="true" weight="0.16257995" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Favorites" order="6" sideWeight="0.50080776" side_tool="true" weight="0.15938166" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32939324" />
@@ -541,11 +554,11 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32939324" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Database Changes" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5016155" side_tool="true" weight="0.32939324" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32827735" />
       <window_info anchor="bottom" id="Database Console" order="13" weight="0.32939324" />
@@ -554,7 +567,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3279483" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32782516" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Maven" order="6" />
       <window_info anchor="right" id="Capture Analysis" order="7" />
@@ -567,7 +580,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project started" />
     <MESSAGE value="Added login func and other pages" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added login func and other pages" />
+    <MESSAGE value="Model classes updated, Milestones class expanded" />
+    <MESSAGE value="Made changes to Topic Servlet to make application run (Topics page no longer displays data)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made changes to Topic Servlet to make application run (Topics page no longer displays data)" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/coursework/Main.java" />
@@ -612,80 +627,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://6116f375-19fb-47c4-bf05-e3b049d7f294/database/SHOP/schema/PUBLIC/table/PERSON">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LoginServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topics.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="7" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/logins.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/logging.properties">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/person.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="2" lean-forward="true" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/target/classes/webapp/index.html">
       <provider selected="true" editor-type-id="text-editor" />
@@ -706,28 +649,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Person.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
-          <folding>
-            <element signature="e#325#326#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#384#385#0" expanded="true" />
-            <element signature="e#411#412#0" expanded="true" />
-            <element signature="e#443#444#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/h2-1.4.199 11-57-14-749.jar!/META-INF/services/java.sql.Driver">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -735,13 +656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -755,39 +669,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="697">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/util/MustacheRenderer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#603#604#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms.mustache">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="25" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/MileStoneBoard.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="71">
+          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#290#291#0" expanded="true" />
@@ -806,29 +691,166 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="238">
+          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+          <folding>
+            <element signature="e#325#326#0" expanded="true" />
+            <element signature="e#353#354#0" expanded="true" />
+            <element signature="e#384#385#0" expanded="true" />
+            <element signature="e#411#412#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#471#472#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/util/MustacheRenderer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#648#649#0" expanded="true" />
-            <element signature="e#680#681#0" expanded="true" />
-            <element signature="e#716#717#0" expanded="true" />
-            <element signature="e#745#746#0" expanded="true" />
-            <element signature="e#783#784#0" expanded="true" />
-            <element signature="e#822#823#0" expanded="true" />
-            <element signature="e#865#866#0" expanded="true" />
-            <element signature="e#901#902#0" expanded="true" />
-            <element signature="e#937#938#0" expanded="true" />
-            <element signature="e#969#970#0" expanded="true" />
-            <element signature="e#1011#1012#0" expanded="true" />
-            <element signature="e#1047#1048#0" expanded="true" />
-            <element signature="e#1257#1258#0" expanded="true" />
-            <element signature="e#1292#1293#0" expanded="true" />
-            <element signature="e#1335#1336#0" expanded="true" />
-            <element signature="e#1367#1368#0" expanded="true" />
+            <element signature="e#530#531#0" expanded="true" />
+            <element signature="e#603#604#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="41" selection-start-line="6" selection-start-column="41" selection-end-line="6" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6116f375-19fb-47c4-bf05-e3b049d7f294/database/SHOP/schema/PUBLIC/table/PERSON">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://6116f375-19fb-47c4-bf05-e3b049d7f294/database/SHOP/schema/PUBLIC/table/LOGINS">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/logins.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="23" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/person.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#705#706#0" expanded="true" />
+            <element signature="e#737#738#0" expanded="true" />
+            <element signature="e#773#774#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#879#880#0" expanded="true" />
+            <element signature="e#922#923#0" expanded="true" />
+            <element signature="e#958#959#0" expanded="true" />
+            <element signature="e#989#990#0" expanded="true" />
+            <element signature="e#1024#1025#0" expanded="true" />
+            <element signature="e#1061#1062#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
+            <element signature="e#1315#1316#0" expanded="true" />
+            <element signature="e#1355#1356#0" expanded="true" />
+            <element signature="e#1397#1398#0" expanded="true" />
+            <element signature="e#1434#1435#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LoginServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topics.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="7" selection-start-line="13" selection-start-column="7" selection-end-line="13" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="697">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.mustache">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="45" selection-start-line="14" selection-start-column="45" selection-end-line="14" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="46" lean-forward="true" selection-start-line="46" selection-end-line="46" />
         </state>
       </provider>
     </entry>
