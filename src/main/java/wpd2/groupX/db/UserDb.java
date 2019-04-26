@@ -34,6 +34,7 @@ public class UserDb implements AutoCloseable {
             connection = getConnection(db);
             loadResource("/person.sql");
             loadResource("/logins.sql");
+            loadResource("/milestones.sql");
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }
