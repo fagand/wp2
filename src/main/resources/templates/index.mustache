@@ -3,28 +3,52 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Shop Demo">
+    <meta name="description" content="index">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="milestones.css">
 </head>
 <body>
-<div>
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand">Index</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+                <li><a href="/index.html">Index</a></li>
+                <li><a href="/login">Login Page</a></li>
+                <li><a href="/milestones">Milestones Page</a></li>
+                <li><a href="/addms">Add Milestone Page</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container">
     <h1>Milestone Database Demo</h1>
-    <p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
-        <a href="/public">public Page |</a>
-        <a href="/milestones">milestones Page |</a>
-        <a href="/topics">topics Page</a></p>
-        <a href="/addms">add a milestone</a></p>
-
     <form method="POST" action="/add">
+        <br>
+        <p>
         <label for="first">First:</label>
         <input type="text" id="first" name="first">
+        </p>
+        <p>
         <label for="last">Last:</label>
         <input type="text" id="last" name="last">
+        </p>
+        <p>
         <label for="email">Email:</label>
         <input type="text" id="email" name="email">
-
-        <input type="submit" value="add">
+        </p>
+        <p>
+        <input type="submit" value="Add">
+        </p>
     </form>
     <p>There are {{count}} persons in the database</p> If you're logged in your name is: {{currentUsername}}
     <p>Persons in the database are:
