@@ -2,7 +2,9 @@ package wpd2.groupX.db;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import wpd2.groupX.model.Milestones;
 import wpd2.groupX.model.Person;
+import wpd2.groupX.model.User;
 
 
 import java.io.IOException;
@@ -34,6 +36,7 @@ public class UserDb implements AutoCloseable {
             connection = getConnection(db);
             loadResource("/person.sql");
             loadResource("/logins.sql");
+            loadResource("/milestones.sql");
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }
@@ -57,6 +60,18 @@ public class UserDb implements AutoCloseable {
             ps.setString(1, person.getFirst());
             ps.setString(2, person.getLast());
             ps.setString(3, person.getEmail());
+            ps.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    public void addMilestone(Milestones ms) {
+        final String ADD_MILESTONE_QUERY = "INSERT INTO milestones (msname, msdesc, msduedate ) VALUES (?,?,?)";
+        try (PreparedStatement ps = connection.prepareStatement(ADD_MILESTONE_QUERY)) {
+            ps.setString(1, ms.getName());
+            ps.setString(2, ms.getDescription());
+            ps.setString(3, ms.getDuedateString());
             ps.execute();
         } catch (SQLException e) {
             throw new RuntimeException(e);

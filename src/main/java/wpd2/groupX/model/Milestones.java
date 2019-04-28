@@ -37,6 +37,11 @@ public class Milestones {
         this.description = d;
     }
 
+    public String getDuedateString(){
+        SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+        String d = formatter.format(this.getDuedate());
+        return d;
+    }
     public Date getDuedate(){
         return this.duedate;
     }
