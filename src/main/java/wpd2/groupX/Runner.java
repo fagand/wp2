@@ -37,7 +37,7 @@ public class Runner {
         TopicServlet topicServlet = new TopicServlet();
         handler.addServlet(new ServletHolder(topicServlet), "/topics");
 
-        MileStoneServlet milestoneServlet = new MileStoneServlet();
+        MileStoneServlet milestoneServlet = new MileStoneServlet(userDb);
         handler.addServlet(new ServletHolder(milestoneServlet), "/milestones");
 
         handler.addServlet(new ServletHolder(new LoginServlet()), "/login");
