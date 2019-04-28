@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,3 +28,34 @@
 </body>
 </html>
 
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{name}}</title>
+
+</head>
+<body>
+<nav><a href="http://localhost:9003/topics">Milestones</a> </nav>
+<h1>{{name}}</h1>
+<p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
+    <a href="/public">public Page |</a>
+    <a href="/milestones">milestones Page |</a>
+    <a href="/topics">topics Page</a></p>
+    <a href="/addms">add a milestone</a></p>
+<p>Welcome {{.}}!</p>
+<div>
+
+    <span>Browse Milestones</span>
+    <ol id='topics'>
+    {{#topics}}
+        <a href="#"><li>{{.}}</li></a>
+    {{/topics}}
+    </ol>
+</div>
+
+</body>
+</html>
+
+>>>>>>> AA
