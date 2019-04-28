@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Shop Demo">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 <body>
 <div>
     <h1>Milestone Database Demo</h1>
-    <p><a href="/login">Login Page</a>
-    <a href="/public">public Page</a>
-    <a href="/milestones">milestones Page</a>
+    <p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
+        <a href="/public">public Page |</a>
+        <a href="/milestones">milestones Page |</a>
         <a href="/topics">topics Page</a></p>
+        <a href="/addms">add a milestone</a></p>
 
     <form method="POST" action="/add">
         <label for="first">First:</label>
@@ -24,7 +26,17 @@
 
         <input type="submit" value="add">
     </form>
-    <p>There are {{count}} persons in the database</p>
+    <p>There are {{count}} persons in the database</p> If you're logged in your name is: {{currentUsername}}
+    <p>Persons in the database are:
+    <ol>
+        {{#person}}
+        <li>{{getFirst}} {{getLast}} Email: {{getEmail}}</li>
+        {{/person}}
+    </ol>
+    </p>
+    <form action="/logout" method="POST">
+        <button type="submit">Logout</button>
+    </form>
 </div>
 </body>
 </html>

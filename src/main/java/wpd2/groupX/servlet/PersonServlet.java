@@ -5,6 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import wpd2.groupX.db.UserDb;
 import wpd2.groupX.model.Person;
+import wpd2.groupX.model.User;
 import wpd2.groupX.util.MustacheRenderer;
 
 import javax.servlet.ServletException;
@@ -15,7 +16,7 @@ import java.io.IOException;
 import java.nio.charset.Charset;
 import java.util.List;
 
-public class PersonServlet extends HttpServlet {
+public class PersonServlet extends BaseServlet {
     static final Logger LOG = LoggerFactory.getLogger(PersonServlet.class);
 
     private final UserDb userDb;
@@ -28,7 +29,8 @@ public class PersonServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         List<Person> persons = userDb.findPersons();
-        String html = mustache.render("index.mustache", new Result(persons.size()));
+        String username = User.getCurrentUser(request);
+        String html = mustache.render("index.mustache", new Result(persons.size(), persons, username));
         response.setContentType("text/html");
         response.setStatus(200);
         response.getOutputStream().write(html.getBytes(Charset.forName("utf-8")));
@@ -46,7 +48,10 @@ public class PersonServlet extends HttpServlet {
 
     @Data
     class Result {
-        private int count;
-        Result(int count) { this.count = count; }
+        public int count;
+        public List<Person> person;
+        public String currentUsername;
+        Result(int count, List<Person> person, String user) {
+            this.count = count; this.person = person; this.currentUsername = user;}
     }
 }

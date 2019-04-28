@@ -5,18 +5,18 @@ import java.util.List;
 
 public class MileStoneBoard {
     private String name;
-    private List<String> milestones;
+    private List<Milestones> milestones;
 
     public MileStoneBoard() {
 
-        this.milestones = new ArrayList<String>();
+        this.milestones = new ArrayList<Milestones>();
     }
 
     public String getName() {
         return this.name;
     }
 
-    public List<String> getTopics() {
+    public List<Milestones> getMilestones() {
         return this.milestones;
     }
 
@@ -24,13 +24,15 @@ public class MileStoneBoard {
         this.name = n;
     }
 
-    public void setTopics(List<String> t) {
+    public void setMilestones(List<Milestones> t) {
         this.milestones = t;
     }
 
-
+    public void addMilestone(Milestones m){
+        this.milestones.add(m);
+    }
     public String toString() {
-        return ("name: " + name + ", topics: " + milestones.toString());
+        return ("name: " + name + ", milestones: " + milestones.toString());
     }
 
 }

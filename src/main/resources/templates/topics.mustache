@@ -1,7 +1,14 @@
 <html>
+<head>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
 <body>
 <h1>{{topic}}</h1>
-<p>We have the following messages:</p>
+<p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
+    <a href="/public">public Page |</a>
+    <a href="/milestones">milestones Page |</a>
+    <a href="/topics">topics Page</a></p>
+    <a href="/addms">add a milestone</a></p>
 <ol>
     {{#messages}}
             <li><a href="http://localhost:9003/message1">{{.}}</a></li>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>{{name}}</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+<body>
+<nav><a href="http://localhost:9003/topics">Milestones</a> </nav>
+<h1>{{name}}</h1>
+<p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
+    <a href="/public">public Page |</a>
+    <a href="/milestones">milestones Page |</a>
+    <a href="/topics">topics Page</a></p>
+    <a href="/addms">Add a milestone</a></p>
+<p>Welcome {{.}}!</p>
+<div>
+
+    <span>Add Milestone</span>
+        <form method="POST" action="/addms">
+            <label for="Milestone Name">Milestone Name:</label>
+            <input type="text" id="msname" name="msname">
+            <label for="Milestone Description">Milestone Description:</label>
+            <input type="text" id="msdesc" name="msdesc">
+            <label for="duedate">Due Date(Format: YYYY-MM-DD)</label>
+            <input type="text" id="duedate" name="duedate">
+
+            <input type="submit" value="Add Milestone">
+        </form>
+
+</div>
+
+</body>
+</html>
+
