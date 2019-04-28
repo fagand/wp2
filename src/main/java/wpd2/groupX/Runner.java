@@ -49,6 +49,9 @@ public class Runner {
         handler.addServlet(new ServletHolder(new PersonServlet(userDb)),"/add");
         handler.addServlet(new ServletHolder(new MilestoneAddServlet(userDb)),"/addms");
 
+        handler.addServlet(new ServletHolder(new PersonServlet(userDb)),"/update");
+        handler.addServlet(new ServletHolder(new MilestoneUpdateServlet(userDb)),"/updatems");
+
 
         server.start();
         LOG.info("Server started, will run until terminated");

@@ -107,6 +107,19 @@ public class UserDb implements AutoCloseable {
         return out;
     }
 
+    public void updateMilestone(Milestones msupdate) {
+        final String UPDATE_MILESTONE_QUERY = "UPDATE milestones SET msname = ?, msdesc = ?, msduedate = ? WHERE id = ?;";
+        try (PreparedStatement ps = connection.prepareStatement(UPDATE_MILESTONE_QUERY)) {
+            ps.setString(1, msupdate.getName());
+            ps.setString(2, msupdate.getDescription());
+            ps.setString(3, msupdate.getDuedateString());
+            ps.setString(4, msupdate.getID());
+            ps.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+    }
+
     private void loadResource(String name) {
         try {
             String cmd = new Scanner(getClass().getResource(name).openStream()).useDelimiter("\\Z").next();
