@@ -9,6 +9,7 @@ import wpd2.groupX.model.User;
 
 import java.io.IOException;
 import java.sql.*;
+import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -90,6 +91,33 @@ public class UserDb implements AutoCloseable {
             throw new RuntimeException(e);
         }
         return out;
+    }
+
+    public List<Milestones> findMilestones() throws ParseException {
+        final String LIST_MS_QUERY = "SELECT msname, msdesc, msduedate  FROM milestones";
+        List<Milestones> out = new ArrayList<>();
+        try (PreparedStatement ps = connection.prepareStatement(LIST_MS_QUERY)) {
+            ResultSet rs = ps.executeQuery();
+            while (rs.next()) {
+                out.add(new Milestones(rs.getString(1), rs.getString(2), rs.getString(3)));
+            }
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+        return out;
+    }
+
+    public void updateMilestone(Milestones msupdate) {
+        final String UPDATE_MILESTONE_QUERY = "UPDATE milestones SET msname = ?, msdesc = ?, msduedate = ? WHERE id = ?;";
+        try (PreparedStatement ps = connection.prepareStatement(UPDATE_MILESTONE_QUERY)) {
+            ps.setString(1, msupdate.getName());
+            ps.setString(2, msupdate.getDescription());
+            ps.setString(3, msupdate.getDuedateString());
+            ps.setString(4, msupdate.getID());
+            ps.execute();
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     private void loadResource(String name) {

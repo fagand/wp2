@@ -14,11 +14,20 @@ public class Milestones {
     private Date duedate;
     private Date completedate;
     private boolean iscomplete;
+    private String id;
     public Milestones(String name, String description, String date) throws ParseException {
         this.name = name;
         this.description = description;
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         this.duedate  = dateFormat.parse(date);
+        this.id = "0";
+    }
+    public Milestones(String name, String description, String date, String id) throws ParseException {
+        this.name = name;
+        this.description = description;
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+        this.duedate  = dateFormat.parse(date);
+        this.id = id;
     }
 
     public String getName() {
@@ -31,6 +40,9 @@ public class Milestones {
 
     public String getDescription() {
         return this.description;
+    }
+    public String getID() {
+        return this.id;
     }
 
     public void setDescription(String d){
