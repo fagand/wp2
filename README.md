@@ -3,7 +3,10 @@
 ## Group X
 
 Functionality implemented:
-Milestones can be created and stored in a database, Users can create accounts which are stored in a database
+Milestones can be created and stored in a database, Users can create accounts which are stored in a database, Milestones are displayed on a page and Milestones can be edited.
+
+A **Demonstration video** is available [here.](https://caledonianac-my.sharepoint.com/personal/dfagan200_caledonian_ac_uk/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fdfagan200_caledonian_ac_uk%2FDocuments%2FWorking%2Emov&parent=%2Fpersonal%2Fdfagan200_caledonian_ac_uk%2FDocuments&cid=5f4c9660-97dd-4f7f-a27e-638201edb6f8)
+The purpose of this video is to demonstrate functionality and to also act as some form of evidence of functionality, in the circumstances that the marker cannot run the program.
 
 # H2 Driver
 During testing, the H2 driver was stored and sourced locally as can be seen here:
