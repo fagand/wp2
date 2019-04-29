@@ -2,21 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8dffbf0-e882-4cd6-949a-c63bda62b497" name="Default Changelist" comment="Made changes to Topic Servlet to make application run (Topics page no longer displays data)">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webapp/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webapp/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webapp/css/business-frontpage.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webapp/gulpfile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webapp/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/webapp/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/ms.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/ms.mustache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/msadd.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/msadd.mustache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/topics.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/topics.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/msupdate.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/msupdate.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/index.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/index.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/ms.mustache" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/ms.mustache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/webapp/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/webapp/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/Runner.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/db/UserDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/db/UserDb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/BaseServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/BaseServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/LoginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/LoginServlet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/PersonServlet$Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/PersonServlet$Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/util/MustacheRenderer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/util/MustacheRenderer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/Milestones.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/model/Milestones.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/MileStoneServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/wpd2/groupX/servlet/MileStoneServlet.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -70,6 +75,10 @@
     </expand>
     <select />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="ErrorTreeViewConfiguration">
     <option name="autoscrollToSource" value="true" />
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="true" />
@@ -82,28 +91,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="165" selection-start-line="2" selection-start-column="165" selection-end-line="2" selection-end-column="165" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="55" selection-start-line="55" selection-end-line="55" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#705#706#0" expanded="true" />
-                <element signature="e#737#738#0" expanded="true" />
-                <element signature="e#773#774#0" expanded="true" />
-                <element signature="e#802#803#0" expanded="true" />
-                <element signature="e#840#841#0" expanded="true" />
-                <element signature="e#879#880#0" expanded="true" />
-                <element signature="e#922#923#0" expanded="true" />
-                <element signature="e#958#959#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="480">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -111,41 +100,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="165" selection-start-line="5" selection-start-column="165" selection-end-line="5" selection-end-column="165" />
+            <state relative-caret-position="480">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/db/UserDb.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="470">
-              <caret line="36" column="37" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topics.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="30">
-              <caret line="2" column="165" selection-start-line="2" selection-start-column="165" selection-end-line="2" selection-end-column="165" />
+            <state relative-caret-position="255">
+              <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -162,8 +127,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/msadd.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="165" selection-start-line="5" selection-start-column="165" selection-end-line="5" selection-end-column="165" />
+            <state relative-caret-position="480">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/msupdate.mustache">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="265">
+              <caret line="74" column="70" lean-forward="true" selection-start-line="74" selection-start-column="70" selection-end-line="74" selection-end-column="70" />
             </state>
           </provider>
         </entry>
@@ -171,8 +145,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="57">
+              <caret line="28" column="114" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,10 +155,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/webapp/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="21" lean-forward="true" selection-end-line="151" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/webapp/js/bootstrap.bundle.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="402">
+              <caret line="2340" column="5" selection-start-line="2340" selection-start-column="5" selection-end-line="2340" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.mustache">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+            <state relative-caret-position="216">
+              <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
             </state>
           </provider>
         </entry>
@@ -207,6 +199,7 @@
       <find>topics</find>
       <find>logins.sql</find>
       <find>person.sql</find>
+      <find>index.html</find>
     </findStrings>
     <replaceStrings>
       <replace>User</replace>
@@ -237,21 +230,24 @@
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/PersonServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/model/MileStoneBoard.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MileStoneServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/TopicServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/db/UserDb.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/topics.mustache" />
+        <option value="$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/webapp/index2.html" />
+        <option value="$PROJECT_DIR$/src/main/resources/webapp/js/bootstrap.bundle.js" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/index.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/ms.mustache" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/msadd.mustache" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/topics.mustache" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/msupdate.mustache" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="y" value="23" />
     <option name="width" value="960" />
     <option name="height" value="1122" />
@@ -264,6 +260,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -296,42 +293,6 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="groupX" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wpd2coursework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpd2coursework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="groupX" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wpd2coursework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpd2coursework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="groupX" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wpd2coursework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpd2coursework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="groupX" type="462c0819:PsiDirectoryNode" />
-              <item name="servlet" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="wpd2coursework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="wpd2coursework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="groupX" type="462c0819:PsiDirectoryNode" />
-              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="wpd2coursework" type="b2602c69:ProjectViewProjectNode" />
@@ -408,7 +369,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -432,6 +392,12 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/webapp" />
+      <recent name="$PROJECT_DIR$/src/main/resources/webapp/css" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -500,6 +466,7 @@
       <workItem from="1555495202092" duration="351000" />
       <workItem from="1555495689731" duration="328000" />
       <workItem from="1556448352902" duration="4199000" />
+      <workItem from="1556529607715" duration="3303000" />
     </task>
     <task id="LOCAL-00001" summary="Project started">
       <created>1552752200742</created>
@@ -533,7 +500,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="49310000" />
+    <option name="totallyTimeSpent" value="52613000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -545,11 +512,11 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="960" height="1122" extended-state="0" />
+    <frame x="0" y="23" width="1920" height="1122" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4949349" visible="true" weight="0.29847494" />
-      <window_info id="Structure" order="1" sideWeight="0.50506514" side_tool="true" visible="true" weight="0.29847494" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49417475" visible="true" weight="0.14909478" />
+      <window_info id="Structure" order="1" sideWeight="0.5058252" side_tool="true" visible="true" weight="0.14909478" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -558,7 +525,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3291262" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" visible="true" weight="0.3291262" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4983845" weight="0.3291262" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3995272" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -604,13 +571,6 @@
       </provider>
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/5dda5d00-28d8-4b7f-81cd-2cb527969eaa/console.sql" />
-    <entry file="file://$PROJECT_DIR$/src/main/resources/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/PublicServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -752,44 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="55" selection-start-line="55" selection-end-line="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#705#706#0" expanded="true" />
-            <element signature="e#737#738#0" expanded="true" />
-            <element signature="e#773#774#0" expanded="true" />
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#840#841#0" expanded="true" />
-            <element signature="e#879#880#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
-            <element signature="e#958#959#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="50" selection-start-line="50" selection-end-line="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/person.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -811,6 +733,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/Milestones.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" selection-start-line="55" selection-end-line="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="16" column="11" selection-start-line="16" selection-start-column="11" selection-end-line="16" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/db/UserDb.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="36" column="37" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/servlet/MilestoneAddServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -818,10 +770,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/db/UserDb.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topics.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="470">
-          <caret line="36" column="37" selection-start-line="36" selection-start-column="27" selection-end-line="36" selection-end-column="37" />
+        <state relative-caret-position="255">
+          <caret line="17" column="7" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" selection-start-line="4" selection-end-line="7" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/webapp/js/bootstrap.bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="402">
+          <caret line="2340" column="5" selection-start-line="2340" selection-start-column="5" selection-end-line="2340" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="21" lean-forward="true" selection-end-line="151" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wpd2/groupX/Runner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="28" column="114" selection-start-line="28" selection-start-column="114" selection-end-line="28" selection-end-column="114" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -830,36 +810,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/index.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-end-line="8" />
+        <state relative-caret-position="216">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/login.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="165" selection-start-line="2" selection-start-column="165" selection-end-line="2" selection-end-column="165" />
+        <state relative-caret-position="480">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/ms.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="165" selection-start-line="5" selection-start-column="165" selection-end-line="5" selection-end-column="165" />
+        <state relative-caret-position="480">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/msadd.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="165" selection-start-line="5" selection-start-column="165" selection-end-line="5" selection-end-column="165" />
+        <state relative-caret-position="480">
+          <caret line="32" column="57" selection-start-line="32" selection-start-column="57" selection-end-line="32" selection-end-column="57" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/topics.mustache">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/msupdate.mustache">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="165" selection-start-line="2" selection-start-column="165" selection-end-line="2" selection-end-column="165" />
+        <state relative-caret-position="265">
+          <caret line="74" column="70" lean-forward="true" selection-start-line="74" selection-start-column="70" selection-end-line="74" selection-end-column="70" />
         </state>
       </provider>
     </entry>
