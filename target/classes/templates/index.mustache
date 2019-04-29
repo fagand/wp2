@@ -1,42 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="description" content="Shop Demo">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" href="/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>MileStones Application</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/css/business-frontpage.css" rel="stylesheet">
+
 </head>
+
 <body>
-<div>
-    <h1>Milestone Database Demo</h1>
-    <p><a href="/index.html">Index |</a> <a href="/login">Login Page |</a>
-        <a href="/public">public Page |</a>
-        <a href="/milestones">milestones Page |</a>
-        <a href="/topics">topics Page</a></p>
-        <a href="/addms">add a milestone</a></p>
 
-    <form method="POST" action="/add">
-        <label for="first">First:</label>
-        <input type="text" id="first" name="first">
-        <label for="last">Last:</label>
-        <input type="text" id="last" name="last">
-        <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="/index.html">MileStones Application</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/milestones">MileStones List</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/addms">MileStones Add</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/updatems">Edit MileStones</a>
+                </li>
+<!--                <li class="nav-item">-->
+<!--                    <a class="nav-link" href="#">Contact</a>-->
+<!--                </li>-->
+            </ul>
+        </div>
+    </div>
+</nav>
 
-        <input type="submit" value="add">
-    </form>
-    <p>There are {{count}} persons in the database</p> If you're logged in your name is: {{currentUsername}}
-    <p>Persons in the database are:
-    <ol>
-        {{#person}}
-        <li>{{getFirst}} {{getLast}} Email: {{getEmail}}</li>
-        {{/person}}
-    </ol>
-    </p>
-    <form action="/logout" method="POST">
-        <button type="submit">Logout</button>
-    </form>
+<!-- Header -->
+<header class="bg-primary py-5 mb-5">
+    <div class="container h-100">
+        <div class="row h-100 align-items-center">
+            <div class="col-lg-12">
+                <h1 class="display-4 text-white mt-5 mb-2">MileStones Application</h1>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+        <div class="col-md-8 mb-5">
+            <h2>Users in the Database</h2>
+            <hr>
+            <p>There are {{count}} persons in the database</p>
+            <p>Persons in the database are:
+            <ol>
+                {{#person}}
+                    <li>{{getFirst}} {{getLast}} Email: {{getEmail}}</li>
+                {{/person}}
+            </ol>
+            </p>
+<!--            <a class="btn btn-primary btn-lg" href="#">Call to Action &raquo;</a>-->
+        </div>
+        <div class="col-md-4 mb-5">
+            <h2>User Logged In</h2>
+            <hr>
+            <form action="/login">
+                <button type="submit">Login</button>
+            </form>
+            <p>
+            If you're logged in your name is: {{currentUsername}}
+            </p>
+            <form action="/logout" method="POST">
+                <button type="submit">Logout</button>
+            </form>
+        </div>
+    </div>
+    <!-- /.row -->
+
+<!--    <div class="row">-->
+<!--        <div class="col-md-4 mb-5">-->
+<!--            <div class="card h-100">-->
+<!--                <img class="card-img-top" src="http://placehold.it/300x200" alt="">-->
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title">Card title</h4>-->
+<!--                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus.</p>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <a href="#" class="btn btn-primary">Find Out More!</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 mb-5">-->
+<!--            <div class="card h-100">-->
+<!--                <img class="card-img-top" src="http://placehold.it/300x200" alt="">-->
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title">Card title</h4>-->
+<!--                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <a href="#" class="btn btn-primary">Find Out More!</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="col-md-4 mb-5">-->
+<!--            <div class="card h-100">-->
+<!--                <img class="card-img-top" src="http://placehold.it/300x200" alt="">-->
+<!--                <div class="card-body">-->
+<!--                    <h4 class="card-title">Card title</h4>-->
+<!--                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>-->
+<!--                </div>-->
+<!--                <div class="card-footer">-->
+<!--                    <a href="#" class="btn btn-primary">Find Out More!</a>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+    <!-- /.row -->
+
 </div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Milestones</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="/vendor/jquery/jquery.min.js"></script>
+<script src="/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
+
