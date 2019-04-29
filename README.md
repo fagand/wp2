@@ -9,5 +9,5 @@ Milestones can be created and stored in a database, Users can create accounts wh
 During testing, the H2 driver was stored and sourced locally as can be seen here:
 ![alt text](https://i.imgur.com/T3KQ8LX.png "Locally stored")
 
-If the program fails to find the H2 Driver when you try to run the system follow these instructions:
+If the program fails to find the H2 Driver when you try to run the system follow [these instructions](https://www.jetbrains.com/help/idea/connecting-to-a-database.html):
 ![alt text](https://imgur.com/YFqEkF3.png "Instructions")
