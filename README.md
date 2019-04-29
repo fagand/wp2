@@ -1,11 +1,11 @@
 # Web Platform Development 2
 # Coursework 2
-##Group X
+## Group X
 
 Functionality implemented:
 Milestones can be created and stored in a database, Users can create accounts which are stored in a database
 
-#H2 Driver
+# H2 Driver
 During testing, the H2 driver was stored and sourced locally as can be seen here:
 ![alt text](https://imgur.com/WHiB40N.png "Locally stored")
 
